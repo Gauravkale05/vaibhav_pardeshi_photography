@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Pardeshi Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="data/wedding1.jpg" alt="Vaibhav Pardeshi Photography">
+        </div>
+        <div class="header-content">
+            <h1>Vaibhav Pardeshi Photography</h1>
+            <p>Explore moments through the lens.</p>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    
+
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="home" class="home">
+        <div class="image-slider">
+            <div class="slide slide-active" style="animation-delay: 0s;">
+                <img src="data/P1.jpg" alt="Image 1">
+                <h1 class="overlay-text">VAIBHAV PARDESHI PHOTOGRAPHY</h1>
+            </div>
+            <div class="slide" style="animation-delay: 5s;">
+                <img src="data/P2.jpg" alt="Image 2">
+                <h1 class="overlay-text">VAIBHAV PARDESHI PHOTOGRAPHY</h1>
+            </div>
+            <div class="slide" style="animation-delay: 10s;">
+                <img src="data/P3.jpg" alt="Image 3">
+                <h1 class="overlay-text">VAIBHAV PARDESHI PHOTOGRAPHY</h1>
+            </div>
+            <div class="slide" style="animation-delay: 15s;">
+                <img src="data/P4.jpg" alt="Image 4">
+                <h1 class="overlay-text">VAIBHAV PARDESHI PHOTOGRAPHY</h1>
+            </div>
+            <div class="slide" style="animation-delay: 20s;">
+                <img src="data/P5.jpg" alt="Image 5">
+                <h1 class="overlay-text">VAIBHAV PARDESHI PHOTOGRAPHY</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="gallery-item" data-category="wedding">
+            <img src="data/wedding1.jpg" alt="Gallery Image 1">
+            <div class="category-name">wedding</div>
+            <div class="lightbox-gallery hidden">
+                <img src="data/wedding2.jpg">
+                <img src="data/wedding3.jpg">
+                <img src="data/wedding4.jpg">
+            </div>
+        </div>
+       
+        <div class="gallery-item" data-category="pre-wedding">
+            <img src="data/wedding1.jpg" alt="Gallery Image 1">
+            <div class="category-name">pre-wedding</div>
+            <div class="lightbox-gallery hidden">
+                <img src="data/wedding2.jpg">
+                <img src="data/wedding3.jpg">
+                <img src="data/wedding4.jpg">
+            </div>
+        </div>
+        <div class="gallery-item" data-category="post-wedding">
+            <img src="data/P1.jpg" alt="Gallery Image 5">
+            <div class="category-name">postwedding</div>
+            <div class="lightbox-gallery hidden">
+                <img src="data/P2.jpg">
+                <img src="data/P3.jpg">
+                <img src="data/P4.jpg">
+            </div>
+        </div>
+        <div class="gallery-item" data-category="maternity">
+            <img src="data/P1.jpg" alt="Gallery Image 5">
+            <div class="category-name">maternity</div>
+            <div class="lightbox-gallery hidden">
+                <img src="data/P2.jpg">
+                <img src="data/P3.jpg">
+                <img src="data/P4.jpg">
+            </div>
+        </div>
+        <!-- Add more gallery items with appropriate data-category attributes -->
+    </section>
+    
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <div class="lightbox-content"></div>
+        <div class="lightbox-caption"></div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="photographer-image">
+                <img src="data/P3.jpg" alt="Photographer Image">
+            </div>
+            <div class="photographer-info">
+                <h2>Vaibhav Pardeshi</h2>
+                <div class="fancy-line"></div>
+                <p>Welcome to the portfolio of Vaibhav Pardeshi, where moments come to life through the lens of a passionate photographer. Specializing in capturing the essence of landscapes, portraits, and events, Vaibhav's work is a celebration of light, emotion, and meticulous attention to detail.</p>
+                <p>With a keen eye for composition and a commitment to storytelling, each photograph is crafted to evoke a sense of wonder and connection. Explore the galleries to discover a visual journey that reflects both artistic vision and technical skill. Whether it's freezing a fleeting moment or revealing the grandeur of nature, Vaibhav Pardeshi Photography invites you to experience the world through a unique perspective.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact-image">
+            <img src="data/wedding1.jpg" alt="Contact Image">
+        </div>
+    </section>
+    
+
+
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/vaibhav_pardeshi_photography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@Vaibhav_Pardeshi_Photography?feature=shared" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 Vaibhav Pardeshi Photography. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
